@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KALLPA+ | Energía que nace de los Andes</title>
+<meta name="description" content="KALLPA+ Quinua & Durazno: bebida nutritiva y funcional con maca y kiwicha. Conoce el origen de sus ingredientes y consulta la trazabilidad de tu lote.">
+<meta name="theme-color" content="#1F5C3A">
+<meta property="og:title" content="KALLPA+ | Energía que nace de los Andes">
+<meta property="og:description" content="Bebida de quinua y durazno con maca y kiwicha. Consulta el origen de tu lote.">
+<meta property="og:image" content="assets/botella.svg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a href="#inicio" class="brand" aria-label="KALLPA+ inicio"><img src="assets/logo.svg" alt="KALLPA+" width="150" height="46"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav id="menu" aria-label="Secciones">
+      <a href="#producto">Producto</a>
+      <a href="#origen">Origen</a>
+      <a href="#trazabilidad">Trazabilidad</a>
+      <a href="#nutricion">Nutrición</a>
+      <a href="#sostenibilidad">Sostenibilidad</a>
+      <a href="#comprar" class="btn small">Dónde comprar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Bebida nutritiva y funcional · 500 ml</p>
+        <h1>Energía que nace de los Andes</h1>
+        <p class="lead">KALLPA+ Quinua &amp; Durazno combina granos andinos y fruta peruana, con maca y kiwicha, en una bebida pasteurizada y sin estimulantes artificiales.</p>
+        <div class="cta">
+          <a href="#trazabilidad" class="btn">Consulta tu lote</a>
+          <a href="#origen" class="btn ghost">Conoce el origen</a>
+        </div>
+        <ul class="chips" aria-label="Atributos">
+          <li>Ingredientes andinos</li><li>Trazabilidad por lote</li><li>Botella con PET reciclado</li>
+        </ul>
+      </div>
+      <div class="hero-art"><img src="assets/botella.svg" alt="Botella de KALLPA+ Quinua y Durazno de 500 ml" width="220" height="572"></div>
+    </div>
+  </section>
+
+  <section id="producto" class="section">
+    <div class="wrap">
+      <h2>Una bebida con identidad peruana</h2>
+      <p class="sub">KALLPA significa <em>fuerza</em> en quechua. Elaboramos cada lote en nuestra planta del Parque Industrial de Villa El Salvador, con controles de calidad en cada etapa.</p>
+      <div class="cards four">
+        <article class="card"><h3>Quinua</h3><p>Aporta proteína vegetal y textura. Se lava para retirar la saponina y se cocina antes de licuarse.</p></article>
+        <article class="card"><h3>Durazno</h3><p>Pulpa de durazno peruano (25 %): sabor y color naturales, sin saborizantes artificiales.</p></article>
+        <article class="card"><h3>Maca</h3><p>Raíz altoandina que complementa la propuesta de energía natural.</p></article>
+        <article class="card"><h3>Kiwicha</h3><p>Grano andino que suma aporte nutricional a la mezcla.</p></article>
+      </div>
+      <div class="facts">
+        <div><strong>500 ml</strong><span>presentación individual</span></div>
+        <div><strong>85 °C · 10 min</strong><span>pasteurización por lote</span></div>
+        <div><strong>pH ≤ 4,0</strong><span>controlado antes de envasar</span></div>
+        <div><strong>90 días</strong><span>vida útil sin abrir</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="origen" class="section tint">
+    <div class="wrap">
+      <h2>De dónde vienen nuestros ingredientes</h2>
+      <p class="sub">Compramos a productores y cooperativas del Perú. Así sabemos de dónde viene cada ingrediente y apoyamos a la agricultura local.</p>
+      <div class="origin">
+        <div class="origin-item"><span class="dot q"></span><div><h3>Quinua · Puno</h3><p>Cooperativa de productores del altiplano.</p></div></div>
+        <div class="origin-item"><span class="dot d"></span><div><h3>Durazno · sierra de Lima</h3><p>Asociación de productores, con pulpa congelada como respaldo fuera de temporada.</p></div></div>
+        <div class="origin-item"><span class="dot m"></span><div><h3>Maca · Junín</h3><p>Maca gelatinizada en polvo.</p></div></div>
+        <div class="origin-item"><span class="dot k"></span><div><h3>Kiwicha · Cusco</h3><p>Harina de kiwicha de origen andino.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trazabilidad" class="section">
+    <div class="wrap trace">
+      <div>
+        <h2>Consulta la trazabilidad de tu lote</h2>
+        <p class="sub">Escribe el código de lote que aparece en la etiqueta (por ejemplo, <code>KP-261201-01</code>) y conoce su origen y sus controles de calidad.</p>
+        <form id="lote-form" class="lote-form" autocomplete="off">
+          <label for="lote">Código de lote</label>
+          <div class="row">
+            <input id="lote" name="lote" placeholder="KP-AAMMDD-NN" inputmode="text" maxlength="14" required>
+            <button class="btn" type="submit">Consultar</button>
+          </div>
+          <p class="hint">Formato: KP · año, mes y día de producción · número de lote del día.</p>
+        </form>
+      </div>
+      <div id="resultado" class="result" aria-live="polite">
+        <p class="placeholder">El resultado de la consulta aparecerá aquí.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nutricion" class="section tint">
+    <div class="wrap two">
+      <div>
+        <h2>Información nutricional</h2>
+        <p class="sub">Valores por 100 ml y por botella de 500 ml.</p>
+        <p class="small-print">Ingredientes: agua tratada, pulpa de durazno (25 %), quinua (3,5 %), azúcar rubia, kiwicha, maca, acidulante (ácido cítrico), estabilizante (carboximetilcelulosa), conservante (sorbato de potasio) y edulcorante (glucósidos de esteviol).</p>
+      </div>
+      <table class="nutri">
+        <caption>Porción: 1 botella (500 ml)</caption>
+        <thead><tr><th scope="col">Nutriente</th><th scope="col">100 ml</th><th scope="col">500 ml</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Energía</th><td>35 kcal</td><td>175 kcal</td></tr>
+          <tr><th scope="row">Grasa total</th><td>0,2 g</td><td>1,2 g</td></tr>
+          <tr><th scope="row">Carbohidratos</th><td>7,4 g</td><td>37 g</td></tr>
+          <tr><th scope="row">Azúcares totales</th><td>4,1 g</td><td>20,5 g</td></tr>
+          <tr><th scope="row">Proteína</th><td>0,8 g</td><td>4,2 g</td></tr>
+          <tr><th scope="row">Sodio</th><td>5 mg</td><td>25 mg</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="sostenibilidad" class="section">
+    <div class="wrap">
+      <h2>Sostenibilidad en todo el ciclo</h2>
+      <div class="cards three">
+        <article class="card"><h3>Botella con PET reciclado</h3><p>Usamos botellas con contenido reciclado, según la Ley N.° 30884. Después de beberla, recíclala.</p></article>
+        <article class="card"><h3>Residuos aprovechados</h3><p>La cáscara y el hueso del durazno se destinan a compostaje con productores aliados.</p></article>
+        <article class="card"><h3>Agua responsable</h3><p>El agua de lavado pasa por trampa de sólidos y control de pH, y el agua de enfriamiento se recircula.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="comprar" class="section tint">
+    <div class="wrap two">
+      <div>
+        <h2>Dónde comprar</h2>
+        <p class="sub">Minimarkets y supermercados de Lima, venta directa, suscripción y pedidos para empresas, gimnasios y universidades.</p>
+      </div>
+      <div class="contact" id="contacto"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <img src="assets/logo-blanco.svg" alt="KALLPA+" width="140" height="43">
+    <p id="legal"></p>
+    <p class="small-print">Proyecto de emprendimiento · Curso Integrador II · Universidad Tecnológica del Perú · 2026</p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/lotes.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
